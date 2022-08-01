@@ -1,0 +1,53 @@
+#habilidades {
+    background-color: #242424;
+}
+
+.habilidades-pd {
+    padding-top: 93px;
+}
+
+.habilidades-pd h2 { 
+    text-align: center;
+    padding-bottom: 70px;
+}
+
+.skills-descricao {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:50px;
+    padding-bottom: 70px;
+}
+
+.conteiner-skills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skill-box {
+    height: 136px;
+    width: 136px;
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: ease 0.3s;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+/*.skill-box:hover {
+    transform: scale(1.05);
+}*/
+
+.conteiner-descricao {
+    color: white;
+    font-family: 'Quando', serif;
+    font-size: 20px;
+    max-width: 40%;
+}

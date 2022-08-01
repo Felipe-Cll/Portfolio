@@ -1,0 +1,91 @@
+#projetos {
+    background-color: #1C1C1C;
+}
+
+.projetos {
+    padding-top: 93px;
+}
+
+.projetos h2, .projetos a {
+    text-align: center;
+}
+
+.projetos h2 {
+    padding-bottom: 70px;
+}
+
+button {
+    padding: 10px 50px;
+    border-radius: 25px;
+    cursor: pointer;
+    color: #000;
+    background-color: #FFD700;
+    border: none;
+    transition: ease-in-out 0.3s;
+}
+
+button:hover {
+    color: #000;
+    background-color: #ffd90091;
+}
+
+.ver-link {
+    margin: 0 auto;
+    padding-top: 35px;
+    padding-bottom: 93px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+}
+
+.projetos a {
+    display: inline;
+}
+
+.pro {
+    background-color: #ffd90091;
+    height: 195px;
+    width: 310px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    overflow: hidden;
+    transition: ease-in-out 0.3s;
+}
+
+.pro div p {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 20px;
+    color: #000;
+}
+
+.pro div {
+    width: 1000px;
+    text-align: center;
+    padding: 5% 0;
+}
+
+.pro:hover {
+    transition: ease-in-out 0.3s;
+    background-color: rgba(255, 217, 0, 0.1);
+}
+
+/*------------------------------------------------------------------------------------*/
+
+.escondido {
+    opacity: 0;
+    display: none;
+    transition: 1000ms;
+}
+
+.projetos-itens {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 29.5px;
+    width: 100%;
+    justify-content: center;
+}

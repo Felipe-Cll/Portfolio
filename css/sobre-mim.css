@@ -1,13 +1,94 @@
 #sobre-mim {
     width: 100%;
     background-color: #242424;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 100px;
+    color: #fff;
 }
 
-.ajustador-2 {
-    padding: 144px 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 67px;
-    max-width: 1064px;
-    margin: 0 auto;
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 45px;
+    color: white;
 }
+
+.centralizador-sobre {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titulo-sobre {
+    font-size: 4em;
+    margin-bottom: 50px;
+}
+
+.ajustador-sobre {
+    display: flex;
+    position: relative;
+    width: 1150px;
+    justify-content: center;
+    align-items: center;
+}
+
+.ajustador-sobre .desenho-sobre {
+    position: relative;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.ajustador-sobre .desenho-sobre img {
+    z-index: 111;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.desenho-sobre {
+    width: 320px;
+    height: 350px;
+    position: relative;
+    cursor: pointer;
+    transition: ease 1s;
+}
+
+.desenho-sobre:hover {
+    transform: scale(1.05);
+}
+
+.ajustador-sobre .texto-box {
+    z-index: 222;
+    border-radius: 10px;
+    max-width: 400px;
+    padding: 40px;
+    background: rgba(255, 217, 0, 0.568);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transform: translate(-80px, -10px);
+}
+
+.texto-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.texto-box p {
+    text-indent: 30px;
+    font-size: 20px;
+    max-width: 600px;
+    color: white;
+    word-wrap: break-word;
+}
+
+

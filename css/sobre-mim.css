@@ -1,0 +1,13 @@
+#sobre-mim {
+    width: 100%;
+    background-color: #242424;
+}
+
+.ajustador-2 {
+    padding: 144px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 67px;
+    max-width: 1064px;
+    margin: 0 auto;
+}

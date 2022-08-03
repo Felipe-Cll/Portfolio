@@ -148,6 +148,7 @@ img {
 
 .botao-linkedin p, .botao-github p {
     position: absolute;
+    font-size: large;
 }
 
 .meu-nome::after{

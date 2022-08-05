@@ -5,7 +5,7 @@ img
 
 <h2>:pushpin: Tecnologias</h2>
 <ul>
-  <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript">JavaScript</a></li>
-  <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML">HTML</a></li>
-  <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS">CSS</a></li>
+  <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank">JavaScript</a></li>
+  <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">HTML</a></li>
+  <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target="_blank">CSS</a></li>
 </ul>

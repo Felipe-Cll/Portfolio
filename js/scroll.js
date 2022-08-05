@@ -3,6 +3,7 @@ ScrollReveal({distance: '30px'});
 
 sr.reveal('.descricao', {duration: 2500, origin: 'left'})
 sr.reveal('.principal-botao', {duration: 2500, origin: 'left'})
+sr.reveal('.scroll-down', {duration: 2500, origin: 'bottom'})
 sr.reveal('.desenho-sobre', {duration: 3000, origin: 'left'})
 sr.reveal('.titulo-sobre', {duration: 3000, origin: 'top'})
 sr.reveal('.texto-box', {duration: 3000, origin: 'right'})

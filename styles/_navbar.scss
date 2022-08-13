@@ -1,0 +1,72 @@
+@import 'colors';
+@import 'media-queries';
+
+%align-center {
+    display: flex;
+    align-items: center;
+}
+
+.navbar {
+    background-color: $gray;
+    display: flex;
+    height: 10vh;
+    justify-content: space-between;
+    padding: 0.5rem calc((100vw - 1000px) / 3);
+    z-index: 10;
+    position: relative;
+
+    &_logo {
+        color: $yellow;
+        cursor: pointer;
+        text-decoration: none;
+        font-size: 2rem;
+        margin-left: 24px;
+        @extend %align-center;
+    }
+
+    &_menu {
+        @extend %align-center;
+        list-style: none;
+        text-align: center;
+        margin-right: 24px;
+
+        ul {
+            display: flex;
+
+            li {
+                list-style: none;
+
+                &::after {
+                    content: "";
+                    display: block;
+                    border-bottom: 2px solid $yellow;
+                    margin-top: 5px;
+                    transform: scaleX(0);
+                    transition: transform 0.3s ease;
+                }
+
+                &:hover::after {
+                    transform: scaleX(1);
+                }
+            }
+        }
+
+        &-links {
+            color: $light;
+            font-size: 1.3rem;
+            @extend %align-center;
+            justify-content: center;
+            text-decoration: none;
+            padding: 0 1rem;
+            position: relative;
+            cursor: pointer;
+
+            &:hover {
+                color: $yellow;
+            }
+        }
+    }
+}
+
+
+    

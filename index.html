@@ -4,151 +4,134 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <title>Portfólio | Cll</title>
-    <link rel="stylesheet" href="/css/nav-principal.css">
-    <link rel="stylesheet" href="/css/sobre-mim.css" />
-    <link rel="stylesheet" href="/css/projetos.css" />
-    <link rel="stylesheet" href="/css/habilidades.css" />
-    <link rel="stylesheet" href="/css/footer.css" />
+    <title>Portfolio | Felipe</title>
+    <link rel="stylesheet" href="./styles/styles.css">
 </head>
-<body onload="typeWriter (maqName)">
-<div>
-    <!-- Menu -->
+<body>
+    <!-- Navigation -->
     <header>
-    <div class="barra">
-        <div class="menu-centro">
-            <div class="barra-conteiner centralizador">
-                <div class="logo esquerda">
-                    <p><a href="index.html">&lsaquo;Cll/&rsaquo;</a></p>
-                </div>
-                <nav class="direita">
+        <div class="navbar_container">
+            <nav class="navbar">
+                <a href="/" class="navbar_logo">&lsaquo;Cll/&rsaquo;</a>
+                <div class="navbar_menu">
                     <ul>
-                        <li><a href="#principal">Início</a></li>
-                        <li><a href="#sobre-mim">Sobre mim</a></li>
-                        <li><a href="#projetos">Projetos</a></li>
-                        <li><a href="#habilidades">Habilidades</a></li>
+                        <li><a href="#hero" class="navbar_menu-links">Início</a></li>
+                        <li><a href="#about" class="navbar_menu-links">Sobre mim</a></li>
+                        <li><a href="#project" class="navbar_menu-links">Projetos</a></li>
+                        <li><a href="#skills" class="navbar_menu-links">Habilidades</a></li>
                     </ul>
-                </nav>
-            </div>
+                </div>
+            </nav>
         </div>
-    </div>
     </header>
-    <!-- Principal -->
-    <section id="principal">
-        <div class="altura">
-            <div class="organizador">
-                <div class="apresentacao">
-                    <p class="descricao">
-                        Oi, eu sou <br />
-                        <span style="display: inline" class="meu-nome">Felipe Silva.</span>
-                        <br />
-                        <!-- Desenvolvedor -->
-                        Desenvolvedor Fullstack
-                    </p>
-                    <div class="principal-botao">
-                        <a href="https://www.linkedin.com/in/felipe-silva-067633246/" target="_blank">
-                            <div class="botao-linkedin"><img src="./assets/linkedin.png" alt="" />
-                                <p>LinkedIn</p>
-                            </div>
-                        </a>
-                        <a href="https://github.com/LipeCll" target="_blank">
-                            <div class="botao-github"><img src="./assets/github.png" alt="" />
-                                <p>Github</p>
-                            </div>
-                        </a>
+    <!-- Main -->
+    <main>
+        <section class="hero">
+            <div class="hero_container">
+                <div class="hero_container-left">
+                    <div class="hero_container-organize">
+                        <p class="hero_container-write">
+                            Oi, eu sou <br />
+                            <span style="display: inline" class="_meu-nome">Felipe Silva.</span>
+                            <br />
+                            <!-- Desenvolvedor -->
+                            Desenvolvedor Fullstack
+                        </p>
+                        <div class="organize_btn">
+                            <a href="https://www.linkedin.com/in/felipe-silva-067633246/" target="_blank">
+                                <div class="organize_btn-linkedin"><img src="./assets/linkedin.png" alt="" />
+                                    <p>LinkedIn</p>
+                                </div>
+                            </a>
+                            <a href="https://github.com/LipeCll" target="_blank">
+                                <div class="organize_btn-github"><img src="./assets/github.png" alt="" />
+                                    <p>Github</p>
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                    <a href="#sobre-mim"><div class="scroll-down"></div></a>
+                </div>
+                <div class="hero_container-right">
+                    <img src="./assets/png/a.png" alt="">
+                </div>
+            </div>
+        </section>
+    <!-- About -->
+        <section class="about">
+            <div class="about_container">
+                <h2 class="title_about">&lsaquo;Sobre mim&rsaquo;</h2>
+                <div class="about_container-center">
+                    <div class="about_container-center_icon">
+                        <img class="desenho-sb" src="./assets/png/vscode.png" alt="desenho-sb"/>
+                    </div>
+                    <div class="about_container-center_text-box">
+                        <p>
+                            Meu nome é Felipe, tenho 22 anos e estou cursando Análise e Desenvolvimento de Sistemas. Sempre tive muita curiosidade sobre diversas tecnologias e desde 2021 estudo programação.
+                        </p>
+                        <br />
+                        <p>
+                            Atualmente estou focado em Front-End, me especializando em .NET, TypeScript e NodeJS. Pretendo me tornar um dia Desenvolvedor Fullstack.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- Projects -->
+        <section class="projects">
+            <div class="projects_container">
+                <h2 class="projects_title">&lsaquo;Projetos&rsaquo;</h2>
+                <div class="projects_container-items">
+                    <div class="projects_container-items-box">
+                        <div class="breve"><p>...</p></div>
+                    </div>
+                    <div class="projects_container-items-box">
+                        <div class="breve"><p>...</p></div>
+                    </div>
+                    <div class="projects_container-items-box">
+                        <div class="breve"><p>...</p></div>
+                    </div>
+                    <div class="projects_container-items-box">
+                        <div class="breve"><p>...</p></div>
+                    </div>
+                </div>
+                <div class="projects_container-github">
+                        <p>Mais projetos no meu github:</p>
+                        <a href=""><img src="./assets/png/githubz.png" alt=""></a>
+                </div>
+            </div>
+        </section>
+    <!-- Skills -->
+    <section class="skills">
+        <div class="skills_container">
+            <h2 class="skills_title">/* Habilidades */</h2>
+            <div class="skills_container-items">
+                <div class="skills_container-items-box">
+                    <img class="icones-habilidades" src="./assets/png/js.png" alt="js-icon"/>
+                </div>
+                <div class="skills_container-items-box">
+                    <img class="icones-habilidades" src="./assets/png/ts.png" alt="ts-icon"/>
+                </div>
+                <div class="skills_container-items-box">
+                    <img class="icones-habilidades" src="./assets/png/react.png" alt="react-icon"/>
+                </div>
+                <div class="skills_container-items-box">
+                    <img class="icones-habilidades" src="./assets/png/html.png" alt="html-icon"/>
+                </div>
+                <div class="skills_container-items-box">
+                    <img class="icones-habilidades" src="./assets/png/css.png" alt="css-icon">
+                </div>
+                <div class="skills_container-items-box">
+                    <img class="icones-habilidades" src="./assets/png/git.png" alt="git-icon"/>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Sobre mim -->
-    <section id="sobre-mim">
-        <div class="centralizador-sobre">
-            <h2 class="titulo-sobre">&lsaquo;Sobre mim&rsaquo;</h2>
-            <div class="ajustador-sobre">
-                <div class="desenho-sobre">
-                    <img class="desenho-sb" src="/assets/img/vscode.png" alt="desenho-sb"/>
-                </div>
-                <div class="texto-box">
-                    <p>
-                        Meu objetivo na minha carreira é desenvolver competências para resolução dos problemas de forma prática. 
-                        Adquirir conhecimentos sobre diferentes linguagens e ferramentas para uma solução de conflitos eficaz. 
-                    </p>
-                    <br />
-                    <p>
-                        Atualmente estou aperfeiçoando meus conhecimentos nos projetos do github.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Projetos -->
-    <section id="projetos">
-        <div class="centralizador projetos">
-            <h2 class="project">&lsaquo;Projetos&rsaquo;</h2>
-            <div class="projetos-itens">
-                <div class="pro">
-                    <div class="breve"><p>EM BREVE...</p></div>
-                </div>
-                <div class="pro">
-                    <div class="breve"><p>EM BREVE...</p></div>
-                </div>
-                <div class="pro">
-                    <div class="breve"><p>EM BREVE...</p></div>
-                </div>
-                <div class="pro escondido">
-                    <div class="breve"><p>EM BREVE...</p></div>
-                </div>
-                <div class="pro escondido">
-                    <div class="breve"><p>EM BREVE...</p></div>
-                </div>
-                <div class="pro escondido">
-                    <div class="breve"><p>EM BREVE...</p></div>
-                </div>
-          </div>
-          <div class="ver-link">
-            <button>Ver mais</button>
-          </div>
-        </div>
-      </section>
-    <!-- Habilidades -->
-    <section id="habilidades">
-        <div class="centralizador">
-          <div class="habilidades-pd">
-            <h2 class="project">/* Habilidades */</h2>
-            <div class="skills-descricao">
-                <div class="conteiner-skills">
-                  <div class="skill-box">
-                    <img class="icones-habilidades" src="/assets/img/js.png" alt="js-icon"/>
-                  </div>
-                  <div class="skill-box">
-                    <img class="icones-habilidades" src="/assets/img/ts.png" alt="ts-icon"/>
-                  </div>
-                  <div class="skill-box">
-                    <img class="icones-habilidades" src="/assets/img/react.png" alt="react-icon"/>
-                  </div>
-                  <div class="skill-box">
-                    <img class="icones-habilidades" src="/assets/img/html.png" alt="html-icon"/>
-                  </div>
-                  <div class="skill-box">
-                    <img class="icones-habilidades" src="/assets/img/css.png" alt="css-icon">
-                  </div>
-                  <div class="skill-box">
-                    <img class="icones-habilidades" src="/assets/img/git.png" alt="git-icon"/>
-                  </div>
-                </div>
-            </div>
-          </div>
-        </div>
-      </section>
+    </main>
     <!-- Footer -->
     <footer class="footer">
-        <div class="footer-conteiner">
-            <div class="contato-creditos">
-              <p>Imagens do <a href="https://www.pexels.com/pt-br/" target="_blank">Pexels</a> e <a href="https://icon-icons.com/" target="_blank">Icon-icons</a>
-              <p>Desenvolvido por <a href="https://www.linkedin.com/in/felipe-silva-067633246/" target="_blank">Felipe Silva</a></p>
+        <div class="footer_container">
+            <div class="footer_container-contatos">
+                <p>Desenvolvido por <a href="https://www.linkedin.com/in/felipe-silva-067633246/" target="_blank">Felipe Silva</a></p>
             </div>
         </div>
     </footer>
@@ -156,8 +139,7 @@
     <script src="/js/maquina_digitando.js"></script>
     <script src="/js/scroll.js"></script>
     <script type="text/javascript" src="/js/vanilla-tilt.js"></script>
-    <script>VanillaTilt.init(document.querySelectorAll(".skill-box"))</script>
-    <script>VanillaTilt.init(document.querySelectorAll(".desenho-sobre"))</script>
-</div>
+    <script>VanillaTilt.init(document.querySelectorAll("./"))</script>
+    <script>VanillaTilt.init(document.querySelectorAll("./"))</script>
 </body>
 </html>

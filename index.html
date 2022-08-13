@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/scrollreveal"></script>
     <title>Portfolio | Felipe</title>
     <link rel="stylesheet" href="./styles/styles.css">
+
 </head>
 <body>
     <!-- Navigation -->
@@ -15,9 +17,9 @@
                 <a href="/" class="navbar_logo">&lsaquo;Cll/&rsaquo;</a>
                 <div class="navbar_menu">
                     <ul>
-                        <li><a href="#hero" class="navbar_menu-links">Início</a></li>
+                        <li><a href="#index.html" class="navbar_menu-links">Início</a></li>
                         <li><a href="#about" class="navbar_menu-links">Sobre mim</a></li>
-                        <li><a href="#project" class="navbar_menu-links">Projetos</a></li>
+                        <li><a href="#projects" class="navbar_menu-links">Projetos</a></li>
                         <li><a href="#skills" class="navbar_menu-links">Habilidades</a></li>
                     </ul>
                 </div>
@@ -26,7 +28,7 @@
     </header>
     <!-- Main -->
     <main>
-        <section class="hero">
+        <section class="hero" id="hero">
             <div class="hero_container">
                 <div class="hero_container-left">
                     <div class="hero_container-organize">
@@ -57,12 +59,12 @@
             </div>
         </section>
     <!-- About -->
-        <section class="about">
+        <section class="about" id="about">
             <div class="about_container">
                 <h2 class="title_about">&lsaquo;Sobre mim&rsaquo;</h2>
                 <div class="about_container-center">
                     <div class="about_container-center_icon">
-                        <img class="desenho-sb" src="./assets/png/vscode.png" alt="desenho-sb"/>
+                        <img class="icon_vsc" src="./assets/png/vscode.png" alt="icon_vsc"/>
                     </div>
                     <div class="about_container-center_text-box">
                         <p>
@@ -77,7 +79,7 @@
             </div>
         </section>
     <!-- Projects -->
-        <section class="projects">
+        <section class="projects" id="projects">
             <div class="projects_container">
                 <h2 class="projects_title">&lsaquo;Projetos&rsaquo;</h2>
                 <div class="projects_container-items">
@@ -96,12 +98,12 @@
                 </div>
                 <div class="projects_container-github">
                         <p>Mais projetos no meu github:</p>
-                        <a href=""><img src="./assets/png/githubz.png" alt=""></a>
+                        <a href="https://github.com/LipeCll" target="_blank"><img src="./assets/png/githubz.png" alt=""></a>
                 </div>
             </div>
         </section>
     <!-- Skills -->
-    <section class="skills">
+    <section class="skills" id="skills">
         <div class="skills_container">
             <h2 class="skills_title">/* Habilidades */</h2>
             <div class="skills_container-items">
@@ -139,7 +141,7 @@
     <script src="/js/maquina_digitando.js"></script>
     <script src="/js/scroll.js"></script>
     <script type="text/javascript" src="/js/vanilla-tilt.js"></script>
-    <script>VanillaTilt.init(document.querySelectorAll("./"))</script>
-    <script>VanillaTilt.init(document.querySelectorAll("./"))</script>
+    <script>VanillaTilt.init(document.querySelectorAll(".about_container-center_icon"))</script>
+    <script>VanillaTilt.init(document.querySelectorAll(".skills_container-items-box"))</script>
 </body>
 </html>

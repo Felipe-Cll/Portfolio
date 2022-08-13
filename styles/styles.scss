@@ -5,6 +5,18 @@
     padding: 0;
     font-family: Arial;
     box-sizing: border-box;
+
+    ::-webkit-scrollbar-track {
+        background-color: #121212;
+    }
+    ::-webkit-scrollbar {
+        background: #121212;
+        width: 10px;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #caac00;
+        border-radius: 5px;
+    }
 }
 
 // Hero

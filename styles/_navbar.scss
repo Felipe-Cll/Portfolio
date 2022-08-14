@@ -1,4 +1,5 @@
-@import 'colors';
+
+@import 'variables';
 @import 'media-queries';
 
 %align-center {
@@ -7,7 +8,7 @@
 }
 
 .navbar {
-    background-color: $gray;
+    background-color: $primary-color;
     display: flex;
     height: 10vh;
     justify-content: space-between;
@@ -16,7 +17,7 @@
     position: relative;
 
     &_logo {
-        color: $yellow;
+        color: $secondary-color;
         cursor: pointer;
         text-decoration: none;
         font-size: 2rem;
@@ -35,19 +36,6 @@
 
             li {
                 list-style: none;
-
-                &::after {
-                    content: "";
-                    display: block;
-                    border-bottom: 2px solid $yellow;
-                    margin-top: 5px;
-                    transform: scaleX(0);
-                    transition: transform 0.3s ease;
-                }
-
-                &:hover::after {
-                    transform: scaleX(1);
-                }
             }
         }
 
@@ -60,9 +48,10 @@
             padding: 0 1rem;
             position: relative;
             cursor: pointer;
+            transition: all .3s ease-in-out;
 
             &:hover {
-                color: $yellow;
+                color: $secondary-color;
             }
         }
     }

@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Ubuntu:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Ubuntu:wght@400;500;700&display=swap");
 .navbar_menu-links, .navbar_menu, .navbar_logo {
   display: flex;
   align-items: center;
@@ -30,17 +32,6 @@
 .navbar_menu ul li {
   list-style: none;
 }
-.navbar_menu ul li::after {
-  content: "";
-  display: block;
-  border-bottom: 2px solid #FFD700;
-  margin-top: 5px;
-  transform: scaleX(0);
-  transition: transform 0.3s ease;
-}
-.navbar_menu ul li:hover::after {
-  transform: scaleX(1);
-}
 .navbar_menu-links {
   color: #FFF;
   font-size: 1.3rem;
@@ -49,6 +40,7 @@
   padding: 0 1rem;
   position: relative;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 .navbar_menu-links:hover {
   color: #FFD700;
@@ -57,7 +49,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: Arial;
+  font-family: "Ubuntu", sans-serif;
   box-sizing: border-box;
 }
 * ::-webkit-scrollbar-track {
@@ -158,7 +150,7 @@
   max-width: 100%;
   margin-top: 70px;
   margin-left: 50px;
-  box-shadow: inset 5px 5px 30px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 5px 5px 30px 5px rgba(0, 0, 0, 0.4);
   border-radius: 30px;
 }
 
@@ -174,7 +166,6 @@
   box-shadow: inset 5px 5px 20px 5px rgba(0, 0, 0, 0.3);
 }
 .about h2 {
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 3.5rem;
   color: #FFF;
   margin-bottom: 50px;
@@ -252,12 +243,10 @@
   gap: 2rem;
 }
 .projects_container-items-box {
-  background-color: #000;
   position: relative;
-  border-radius: 20px;
   max-width: 280px;
   width: 100%;
-  height: 220px;
+  height: 240px;
 }
 .projects_container-github {
   display: flex;
@@ -319,9 +308,5 @@
 }
 .footer_container-contatos a {
   text-decoration: none;
-  color: #FFF;
-  transition: 0.3s ease-in-out;
-}
-.footer_container-contatos a:hover {
   color: #FFD700;
 }/*# sourceMappingURL=styles.css.map */

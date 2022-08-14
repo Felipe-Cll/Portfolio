@@ -1,27 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Ubuntu:wght@400;500;700&display=swap');
 @import 'navbar';
 
 * {
     margin: 0;
     padding: 0;
-    font-family: Arial;
+    font-family: $font-stack;
     box-sizing: border-box;
 
     ::-webkit-scrollbar-track {
-        background-color: #121212;
+        background-color: $scroll-color-back;
     }
     ::-webkit-scrollbar {
-        background: #121212;
+        background: $scroll-color-back;
         width: 10px;
     }
     ::-webkit-scrollbar-thumb {
-        background: #caac00;
+        background: $secondary-filter;
         border-radius: 5px;
     }
 }
 
 // Hero
 .hero {
-    background-color: $gray;
+    background-color: $primary-color;
     height: 90vh;
     width: 100%;
     align-items: center;
@@ -48,6 +49,7 @@
             line-height: 1.2;
             color: $light;
             font-size: 2rem;
+
         }
 
         &-write ._meu-nome {
@@ -79,7 +81,7 @@
                 align-items: center;
                 justify-content: space-evenly;
                 border-radius: 8px;
-                background-color: $yellow;
+                background-color: $secondary-color;
                 padding: 5px 5px 5px;
                 width: 140px;
                 height: 40px;
@@ -107,7 +109,7 @@
                 max-width: 100%;
                 margin-top: 70px;
                 margin-left: 50px;
-                box-shadow: inset 5px 5px 30px 5px rgb(0 0 0 / 30%);
+                box-shadow: inset 5px 5px 30px 5px rgb(0 0 0 / 40%);
                 border-radius: 30px;
                 
             }
@@ -121,14 +123,14 @@
     align-items: center;
     justify-content: center;
     color: $light;
-    background-color: $gray;
+    background-color: $primary-color;
     position: relative;
     display: flex;
     padding: 80px 100px;
     box-shadow: inset 5px 5px 20px 5px rgb(0 0 0 / 30%);
     
     h2 {
-        font-family: Arial, Helvetica, sans-serif;
+
         font-size: 3.5rem;
         color: $light;
         margin-bottom: 50px;
@@ -180,6 +182,7 @@
                 p {
                     text-indent: 30px;
                     font-size: 1.3rem;
+
                     max-width: 600px;
                     color: $dark;
                     word-wrap: break-word;
@@ -212,12 +215,10 @@
             gap: 2rem;
 
             &-box {
-                background-color: $dark;
                 position: relative;
-                border-radius: 20px;
                 max-width: 280px;
                 width: 100%;
-                height: 220px;
+                height: 240px;
             }
         }
 
@@ -239,7 +240,7 @@
 }
 
 .skills {
-    background-color: $gray;
+    background-color: $primary-color;
     padding-bottom: 100px;
     box-shadow: inset 5px 5px 20px 5px rgb(0 0 0 / 30%);
 
@@ -274,7 +275,7 @@
 }
 
 .footer {
-    background-color: #242424;
+    background-color: $primary-color;
     padding-bottom: 1rem;
     padding-top: 1rem;
 
@@ -292,14 +293,8 @@
             
             a {
                 text-decoration: none;
-                color: $light;
-                transition: 0.3s ease-in-out;
-
-                &:hover {
-                    color: $yellow;
-                }
+                color: $secondary-color;
             }
         }
     }
-
 }

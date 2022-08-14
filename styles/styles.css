@@ -247,6 +247,62 @@
   max-width: 280px;
   width: 100%;
   height: 240px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.projects_container-items-box a {
+  text-decoration: none;
+}
+.projects_container-items-box-card {
+  background: #242424;
+  border-radius: 15px;
+  width: 280px;
+  height: 240px;
+  padding: 20px 30px;
+  transition: all 0.3s ease;
+}
+.projects_container-items-box-card:hover {
+  background-color: #242424;
+  box-shadow: 0 8px 50px rgba(0, 0, 0, 0.2);
+  margin-top: -30px;
+  transform: scale(1.05);
+}
+.projects_container-items-box-card-txt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.projects_container-items-box-card-txt img {
+  width: 100%;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+}
+.projects_container-items-box-card-txt-btn img {
+  align-items: center;
+  width: 60px;
+  height: 50px;
+}
+.projects_container-items-box-card-txt-btn .img-hover {
+  display: none;
+}
+.projects_container-items-box-card-txt-btn:hover img.img-default {
+  display: none;
+}
+.projects_container-items-box-card-txt-btn:hover img.img-hover {
+  display: inherit;
+}
+.projects_container-items-box-card-txt-title {
+  margin: 30px 0 10px 0;
+  color: #FFF;
+}
+.projects_container-items-box-card-txt p {
+  color: #FFF;
 }
 .projects_container-github {
   display: flex;

@@ -219,6 +219,74 @@
                 max-width: 280px;
                 width: 100%;
                 height: 240px;
+                border-radius: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                a {
+                    text-decoration: none;
+                }
+
+                &-card {
+                    background: $primary-color;
+                    border-radius: 15px;
+                    width: 280px;
+                    height: 240px;
+                    padding: 20px 30px;
+                    
+                    transition: all 0.3s ease;
+
+                    &:hover {
+                        background-color: $primary-color;
+                        box-shadow: 0 8px 50px rgba(0,0,0,0.2);
+                        margin-top: -30px;
+                        transform: scale(1.05);
+                    }
+
+                    &-txt {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+
+                        img {
+                            width: 100%;
+                            height: 100px;
+                            object-fit: cover;
+                            border-radius: 20px;
+                        }
+
+                        &-btn {
+
+                            img {
+                                align-items: center;
+                                width: 60px;
+                                height: 50px;
+                            }
+
+                            .img-hover {
+                                display: none;
+                            }
+                            &:hover img.img-default {
+                                display: none;
+                            }
+                            &:hover img.img-hover {
+                                display: inherit;
+                            }
+                            
+                        }
+
+                        &-title {
+                            margin: 30px 0 10px 0;
+                            color: $light;
+                        }
+                        p {
+                            color: $light;
+                        }
+                    }
+                }
             }
         }
 
@@ -254,7 +322,6 @@
 
     &_container {
         
-
         &-items {
             display: flex;
             justify-content: center;

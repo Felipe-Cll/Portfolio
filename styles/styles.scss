@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Ubuntu:wght@400;500;700&display=swap');
 @import 'navbar';
+@import 'media-queries';
 
 * {
     margin: 0;
@@ -25,16 +26,17 @@
     background-color: $primary-color;
     height: 90vh;
     width: 100%;
+
     align-items: center;
     display: flex;
     background-size: cover;
 
     &_container {
-        margin: 0 auto;
+        margin: auto;
         height: 700px;
         width: 100%;
         z-index: 1;
-        max-width: 1100px;
+        max-width: 1200px;
         display: flex;
 
         &-organize {
@@ -74,8 +76,8 @@
 
         .organize_btn {
             display: flex;
-            width: 320px;
-            justify-content: space-between;
+            gap: 1rem;
+            
 
             &-linkedin, &-github {
                 align-items: center;
@@ -105,8 +107,7 @@
             width: 100%;
             
             img {
-                height: 400px;
-                max-width: 100%;
+                height: 50%;
                 margin-top: 70px;
                 margin-left: 50px;
                 box-shadow: inset 5px 5px 30px 5px rgb(0 0 0 / 40%);
@@ -146,7 +147,6 @@
         &-center {
             display: flex;
             position: relative;
-            width: 1150px;
             justify-content: center;
             align-items: center;
 
@@ -170,6 +170,7 @@
             }
 
             &_text-box {
+                position: relative;
                 z-index: 222;
                 border-radius: 10px;
                 max-width: 400px;
@@ -326,11 +327,9 @@
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-            gap: 1rem;
+            gap: 3rem;
 
             &-box {
-                height: 136px;
-                width: 136px;
                 border-radius: 20px;
                 background-repeat: no-repeat;
                 background-position: center;
@@ -338,6 +337,20 @@
                 transition: ease 0.3s;
             }
         }
+    }
+
+    .scroll-up {
+        text-decoration: none;
+        background-color: $secondary-color;
+        color: $primary-color;
+        border-radius: 8px;
+        height: 45px;
+        width: 40px;
+        line-height: 45px;
+        text-align: center;
+        position: fixed;
+        right: 30px;
+        bottom: 50px;
     }
 }
 

@@ -1,4 +1,3 @@
-
 @import 'variables';
 @import 'media-queries';
 
@@ -7,14 +6,34 @@
     align-items: center;
 }
 
-.navbar {
+.responsive {
+    max-width: 1400px;
+    margin: auto;
+    padding: 0 80px;
+
+    @include tablet {
+        padding: 0 50px;
+    }
+    @include mobile-lg {
+        padding: 0 25px;
+    }
+    @include mobile-sm {
+        padding: 0 10px;
+    }
+}
+
+header {
     background-color: $primary-color;
-    display: flex;
-    height: 10vh;
-    justify-content: space-between;
-    padding: 0.5rem calc((100vw - 1000px) / 3);
-    z-index: 10;
-    position: relative;
+}
+
+.navbar {
+    padding: 30px 0;
+
+    &_container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between; 
+    }
 
     &_logo {
         color: $secondary-color;
@@ -25,11 +44,27 @@
         @extend %align-center;
     }
 
+    &_bars {
+        opacity: 0;
+
+        @include tablet {
+            color: $light;
+            opacity: 1;
+            position: absolute;
+            top: 22px;
+            right: 20px;
+            font-size: 2rem;
+        }
+    }
+
     &_menu {
         @extend %align-center;
         list-style: none;
         text-align: center;
-        margin-right: 24px;
+
+        @include tablet {
+            display: none;
+        }
 
         ul {
             display: flex;
@@ -44,8 +79,7 @@
             font-size: 1.3rem;
             @extend %align-center;
             justify-content: center;
-            text-decoration: none;
-            padding: 0 1rem;
+            margin-left: 20px;
             position: relative;
             cursor: pointer;
             transition: all .3s ease-in-out;

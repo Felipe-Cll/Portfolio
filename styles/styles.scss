@@ -10,22 +10,30 @@
     box-sizing: border-box;
 }
 
+html {
+
+    @include tablet {
+        font-size: 90%;
+    }
+}
+
 // Hero
 .hero {
     background-color: $primary-color;
+    justify-content: center;
+    align-items: center;
+    display: flex;
     height: 90vh;
     width: 100%;
 
-    align-items: center;
-    display: flex;
-    background-size: cover;
-
     &_container {
-        max-width: 1280px;
-        margin: auto;
         height: 700px;
-        width: 100%;
         display: flex;
+
+        @include tablet {
+            flex-direction: column;
+            text-align: center;
+        }
 
         &-organize {
             margin-top: 150px;
@@ -65,8 +73,11 @@
         .organize_btn {
             display: flex;
             gap: 1rem;
-            
 
+            @include tablet {
+                justify-content: center;
+            }
+            
             &-linkedin, &-github {
                 align-items: center;
                 justify-content: space-evenly;
@@ -100,7 +111,10 @@
                 margin-left: 50px;
                 box-shadow: inset 5px 5px 30px 5px rgb(0 0 0 / 40%);
                 border-radius: 30px;
-                
+
+                @include tablet {
+                    display: none;
+                }
             }
         }
     }
@@ -115,7 +129,7 @@
     background-color: $primary-color;
     position: relative;
     display: flex;
-    padding: 80px 100px;
+    padding: 80px 0px;
     box-shadow: inset 5px 5px 20px 5px rgb(0 0 0 / 30%);
     
     h2 {
@@ -125,8 +139,6 @@
     }
 
     &_container {
-        max-width: 1280px;
-        margin: auto;
         position: relative;
         display: flex;
         justify-content: center;
@@ -138,6 +150,10 @@
             position: relative;
             justify-content: center;
             align-items: center;
+
+            @include tablet {
+                flex-direction: column;
+            }
 
             &_icon {
                 position: relative;
@@ -159,20 +175,18 @@
             }
 
             &_text-box {
-                position: relative;
-                z-index: 222;
                 border-radius: 10px;
-                max-width: 400px;
+                max-width: 500px;
                 padding: 40px;
                 background: linear-gradient(10deg,#ceaf00,#ffd900);;
-                backdrop-filter: blur(20px);
-                border: 1px solid rgba(255, 255, 255, 0.1);
-                transform: translate(100px, -10px);
+
+                @include tablet {
+                    order: -1;
+                }
 
                 p {
                     text-indent: 30px;
                     font-size: 1.3rem;
-
                     max-width: 600px;
                     color: $dark;
                     word-wrap: break-word;
@@ -185,18 +199,24 @@
 
 .projects {
     background: linear-gradient(80deg,#a88f02,#e7c500);
+    justify-content: center;
+    align-items: center;
     padding-top: 90px;
     padding-bottom: 50px;
     height: 100%;
+    width: 100%;
 
     h2 {
         text-align: center;
         font-size: 4rem;
         margin-bottom: 50px;
+
+        @include mobile-md {
+            font-size: 3.5rem;
+        }
     }
 
     &_container {
-        max-width: 1280px;
         margin: auto;
 
         &-items {
@@ -301,6 +321,8 @@
 
 .skills {
     background-color: $primary-color;
+    justify-content: center;
+    align-items: center;
     padding: 100px 0;
     box-shadow: inset 5px 5px 20px 5px rgb(0 0 0 / 30%);
 
@@ -310,10 +332,17 @@
         text-align: center;
         padding-top: 70px;
         padding-bottom: 70px;
+
+        @include mobile-md {
+            font-size: 2.8rem;
+        }
+        @include mobile-sm {
+            font-size: 2.5rem;
+        }
+
     }
 
     &_container {
-        max-width: 1280px;
         margin: auto;
 
         &-items {
@@ -328,6 +357,12 @@
                 background-position: center;
                 cursor: pointer;
                 transition: ease 0.3s;
+
+                @include mobile-md {
+                    img {
+                        width: 80px;
+                    }
+                }
             }
         }
     }
@@ -350,14 +385,13 @@
 
 .contact {
     background: linear-gradient(80deg,#a88f02,#e7c500);
+    justify-content: center;
+    align-items: center;
     padding: 100px 0;
 
     &_container {
         align-items: center;
         justify-content: center;
-        padding: 0 80px;
-        max-width: 1280px;
-        margin: auto;
 
         &-title {
             font-size: 2.5rem;
@@ -374,6 +408,11 @@
             &-left {
                 width: calc(50% - 30px);
 
+                @include mobile-lg {
+                    width: calc(100% - 0px);
+                    margin-bottom: 40px;
+                }
+
                 h3 {
                     margin-bottom: 10px;
                     font-size: 1.5rem;
@@ -381,6 +420,7 @@
                 p {
                     margin-bottom: 20px;
                     font-size: 1.1rem;
+                    word-wrap: break-word;
                 }
                 
                 &-infos {
@@ -409,6 +449,10 @@
 
             &-right {
                 width: calc(50% - 30px);
+
+                @include mobile-lg {
+                    width: calc(100% - 0px);
+                }
 
                 h3 {
                     margin-bottom: 20px;
@@ -469,17 +513,13 @@
     padding-top: 1rem;
 
     &_container {
-        max-width: 1280px;
-        margin: auto;
         display: flex;
         align-items: center;
         justify-content: center;
 
         &-contatos {
-            max-width: 1000px;
             color: $light;
             font-size: 1rem;
-            padding: 10px 0;
             
             a {
                 text-decoration: none;

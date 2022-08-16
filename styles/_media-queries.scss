@@ -1,70 +1,23 @@
-@media (max-width: 768px) {
-    html {
-        font-size: 80%;
-    }
-    
-    .hero {
-        &_container {
-           flex-direction: column; 
-           text-align: center;
-           
-           &-right {
-                order: -1;
-    
-                img {
-                    display: none;
-                }
-            }
-        }
-        .organize_btn {
-            justify-content: center;
-        }
-    }
-
-    .about {
-        &_container {
-
-           &-center {
-                flex-direction: column;
-    
-                &_text-box {
-                    width: 400px;
-                    order: -1;
-                    margin-right: 180px;
-                }
-            }
-        }
+@mixin tablet {
+    @media screen and (max-width: 950px) {
+        @content;
     }
 }
 
-@media (max-width: 630px) {
-    .about {
-        &_container {
-
-            &-center {
-     
-                &_text-box {    
-                    width: 400px;
-                }
-            }
-        }
+@mixin mobile-lg {
+    @media screen and (max-width: 630px) {
+        @content;
     }
 }
 
-@media (max-width: 540px) {
-    .navbar_menu {
-        display: none;
+@mixin mobile-md {
+    @media screen and (max-width: 425px) {
+        @content;
     }
-    
-    .about {
-        &_container {
+}
 
-            &-center {
-     
-                &_text-box {    
-                    width: 300px;
-                }
-            }
-        }
+@mixin mobile-sm {
+    @media screen and (max-width: 371px) {
+        @content;
     }
 }

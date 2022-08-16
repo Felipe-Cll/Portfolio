@@ -8,18 +8,6 @@
     font-family: $font-stack;
     text-decoration: none;
     box-sizing: border-box;
-
-    ::-webkit-scrollbar-track {
-        background-color: $scroll-color-back;
-    }
-    ::-webkit-scrollbar {
-        background: $scroll-color-back;
-        width: 10px;
-    }
-    ::-webkit-scrollbar-thumb {
-        background: $secondary-filter;
-        border-radius: 5px;
-    }
 }
 
 // Hero

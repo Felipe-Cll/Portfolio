@@ -6,6 +6,7 @@
     margin: 0;
     padding: 0;
     font-family: $font-stack;
+    text-decoration: none;
     box-sizing: border-box;
 
     ::-webkit-scrollbar-track {
@@ -32,11 +33,10 @@
     background-size: cover;
 
     &_container {
+        max-width: 1280px;
         margin: auto;
         height: 700px;
         width: 100%;
-        z-index: 1;
-        max-width: 1200px;
         display: flex;
 
         &-organize {
@@ -131,13 +131,14 @@
     box-shadow: inset 5px 5px 20px 5px rgb(0 0 0 / 30%);
     
     h2 {
-
         font-size: 3.5rem;
         color: $light;
         margin-bottom: 50px;
     }
 
     &_container {
+        max-width: 1280px;
+        margin: auto;
         position: relative;
         display: flex;
         justify-content: center;
@@ -207,7 +208,9 @@
     }
 
     &_container {
-        
+        max-width: 1280px;
+        margin: auto;
+
         &-items {
             display: flex;
             align-items: center;
@@ -310,7 +313,7 @@
 
 .skills {
     background-color: $primary-color;
-    padding-bottom: 100px;
+    padding: 100px 0;
     box-shadow: inset 5px 5px 20px 5px rgb(0 0 0 / 30%);
 
     h2 {
@@ -322,7 +325,9 @@
     }
 
     &_container {
-        
+        max-width: 1280px;
+        margin: auto;
+
         &-items {
             display: flex;
             justify-content: center;
@@ -351,6 +356,122 @@
         position: fixed;
         right: 30px;
         bottom: 50px;
+        font-size: 2rem;
+    }
+}
+
+.contact {
+    background: linear-gradient(80deg,#a88f02,#e7c500);
+    padding: 100px 0;
+
+    &_container {
+        align-items: center;
+        justify-content: center;
+        padding: 0 80px;
+        max-width: 1280px;
+        margin: auto;
+
+        &-title {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        &-center {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            &-left {
+                width: calc(50% - 30px);
+
+                h3 {
+                    margin-bottom: 10px;
+                    font-size: 1.5rem;
+                }
+                p {
+                    margin-bottom: 20px;
+                    font-size: 1.1rem;
+                }
+                
+                &-infos {
+
+                    &-row {
+                        display: flex;
+                        align-items: center;
+                        margin-top: 10px;
+
+                        i {
+                            padding-right: 20px;
+                            font-size: 2rem;
+                            color: $primary-color;
+                            transition: .3s ease-in-out;
+                        }
+
+                        .fa-telegram:hover {
+                            color: #0088CC;
+                        }
+                        .fa-discord:hover {
+                            color: #7289da;
+                        }
+                    }
+                }
+            }
+
+            &-right {
+                width: calc(50% - 30px);
+
+                h3 {
+                    margin-bottom: 20px;
+                    font-size: 1.5rem;
+                }
+
+                &-form {
+
+                    input, textarea {
+                        height: 100%;
+                        width: 100%;
+                        border: 1px solid lightgrey;
+                        border-radius: 10px;
+                        padding: 0 15px;
+                        resize: none;
+                        outline: none;
+                        font-size: 1rem;
+                    }
+
+                    .fields {
+                        display: flex;
+                        
+                    }
+
+                    .fields, .field {
+                        height: 40px;
+                        width: 100%;
+                        margin-bottom: 5px
+
+                    }
+
+                    .name {
+                        margin-right: 10px;
+                    }
+
+                    .field_textarea {
+                        height: 110px;
+                    }
+                
+                    .btn_area button {
+                        margin-top: 10px;
+                        padding: 15px 30px;
+                        background: $primary-color;
+                        border-radius: 10px;
+                        color: #fff;
+                        cursor: pointer;
+                        transition: ease 0.3s all;
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -360,7 +481,8 @@
     padding-top: 1rem;
 
     &_container {
-        margin: 0 auto;
+        max-width: 1280px;
+        margin: auto;
         display: flex;
         align-items: center;
         justify-content: center;

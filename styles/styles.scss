@@ -11,7 +11,6 @@
 }
 
 html {
-
     @include tablet {
         font-size: 90%;
     }
@@ -24,23 +23,17 @@ html {
     align-items: center;
     display: flex;
     height: 90vh;
-    width: 100%;
 
     &_container {
-        height: 700px;
         display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20rem;
+        margin-bottom: 200px;
 
         @include tablet {
             flex-direction: column;
             text-align: center;
-        }
-
-        &-organize {
-            margin-top: 150px;
-        }
-
-        &-left {
-            width: 100%;
         }
 
         &-left p {
@@ -60,7 +53,6 @@ html {
             opacity: 1;
             animation: pisca .7s infinite;
         }
-
         @keyframes pisca {
             0%, 100% {
                 opacity: 1;
@@ -103,12 +95,8 @@ html {
         }
 
         &-right {
-            width: 100%;
             
             img {
-                height: 50%;
-                margin-top: 70px;
-                margin-left: 50px;
                 box-shadow: inset 5px 5px 30px 5px rgb(0 0 0 / 40%);
                 border-radius: 30px;
 
@@ -127,7 +115,6 @@ html {
     justify-content: center;
     color: $light;
     background-color: $primary-color;
-    position: relative;
     display: flex;
     padding: 80px 0px;
     box-shadow: inset 5px 5px 20px 5px rgb(0 0 0 / 30%);
@@ -139,7 +126,6 @@ html {
     }
 
     &_container {
-        position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -147,7 +133,6 @@ html {
 
         &-center {
             display: flex;
-            position: relative;
             justify-content: center;
             align-items: center;
 
@@ -156,20 +141,11 @@ html {
             }
 
             &_icon {
-                position: relative;
                 width: 300px;
                 height: 300px;
-                overflow: hidden;
 
                 img {
-                    z-index: 111;
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
                     height: 100%;
-                    object-fit: cover;
-                    border-radius: 10px;
                     cursor: pointer;
                 }
             }
@@ -189,7 +165,6 @@ html {
                     font-size: 1.3rem;
                     max-width: 600px;
                     color: $dark;
-                    word-wrap: break-word;
                     hyphens: auto;
                 }
             }
@@ -201,10 +176,7 @@ html {
     background: linear-gradient(80deg,#a88f02,#e7c500);
     justify-content: center;
     align-items: center;
-    padding-top: 90px;
-    padding-bottom: 50px;
-    height: 100%;
-    width: 100%;
+    padding: 100px 0;
 
     h2 {
         text-align: center;
@@ -217,7 +189,6 @@ html {
     }
 
     &_container {
-        margin: auto;
 
         &-items {
             display: flex;
@@ -227,19 +198,10 @@ html {
             gap: 2rem;
 
             &-box {
-                position: relative;
-                max-width: 280px;
-                width: 100%;
-                height: 240px;
-                border-radius: 20px;
-                display: flex;
-                flex-direction: column;
                 align-items: center;
                 justify-content: center;
-
-                a {
-                    text-decoration: none;
-                }
+                border-radius: 20px;
+                display: flex;
 
                 &-card {
                     background: $primary-color;
@@ -247,7 +209,6 @@ html {
                     width: 280px;
                     height: 240px;
                     padding: 20px 30px;
-                    
                     transition: all 0.3s ease;
 
                     &:hover {
@@ -294,9 +255,6 @@ html {
                             margin: 30px 0 10px 0;
                             color: $light;
                         }
-                        p {
-                            color: $light;
-                        }
                     }
                 }
             }
@@ -310,10 +268,6 @@ html {
 
             p {
                 font-size: 1.3rem;
-            }
-
-            img {
-                cursor: pointer;
             }
         }
     }
@@ -330,8 +284,7 @@ html {
         color: $light;
         font-size: 3rem;
         text-align: center;
-        padding-top: 70px;
-        padding-bottom: 70px;
+        padding: 50px 0;
 
         @include mobile-md {
             font-size: 2.8rem;
@@ -343,7 +296,6 @@ html {
     }
 
     &_container {
-        margin: auto;
 
         &-items {
             display: flex;
@@ -353,8 +305,6 @@ html {
 
             &-box {
                 border-radius: 20px;
-                background-repeat: no-repeat;
-                background-position: center;
                 cursor: pointer;
                 transition: ease 0.3s;
 
@@ -378,7 +328,7 @@ html {
         text-align: center;
         position: fixed;
         right: 30px;
-        bottom: 50px;
+        bottom: 45px;
         font-size: 2rem;
     }
 }
@@ -509,8 +459,7 @@ html {
 
 .footer {
     background-color: $primary-color;
-    padding-bottom: 1rem;
-    padding-top: 1rem;
+    padding: 25px 0;
 
     &_container {
         display: flex;
@@ -522,7 +471,6 @@ html {
             font-size: 1rem;
             
             a {
-                text-decoration: none;
                 color: $secondary-color;
             }
         }

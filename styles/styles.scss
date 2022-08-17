@@ -11,6 +11,7 @@
 }
 
 html {
+
     @include tablet {
         font-size: 90%;
     }
@@ -319,20 +320,20 @@ html {
         }
     }
 
-    .scroll-up {
+    #scroll-up {
         text-decoration: none;
         background-color: $secondary-color;
         color: $primary-color;
         border-radius: 8px;
         height: 45px;
         width: 40px;
-        line-height: 45px;
         text-align: center;
         position: fixed;
         right: 30px;
         bottom: 45px;
         font-size: 2rem;
-        opacity: 0;
+        display: none;
+        cursor: pointer;
     }
     
 }

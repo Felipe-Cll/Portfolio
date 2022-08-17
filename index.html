@@ -7,6 +7,7 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     <script src="https://kit.fontawesome.com/482300bc2c.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>Portfolio | Felipe</title>
     <link rel="stylesheet" href="./styles/styles.css">
 
@@ -187,7 +188,7 @@
                         <img class="icones-habilidades" src="./assets/png/git.png" alt="git-icon"/>
                     </div>
                 </div>
-                <a class="scroll-up" href="#"><i class="fas fa-angle-up"></i></a>
+                <button id="scroll-up"><i class="fas fa-angle-up"></i></button>
             </div>
         </div>
     </section>
@@ -270,8 +271,9 @@
         </div>
     </footer>
     <!-- JS -->
-    <script src="/js/maquina_digitando.js"></script>
-    <script src="/js/scroll.js"></script>
+    <script src="./js/maquina_digitando.js"></script>
+    <script src="./js/scroll.js"></script>
+    <script src="./js/scroll-BTN.js"></script>
     <script type="text/javascript" src="/js/vanilla-tilt.js"></script>
     <script>VanillaTilt.init(document.querySelectorAll(".about_container-center_icon"))</script>
     <script>VanillaTilt.init(document.querySelectorAll(".skills_container-items-box"))</script>

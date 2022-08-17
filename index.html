@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://unpkg.com/scrollreveal"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     <script src="https://kit.fontawesome.com/482300bc2c.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="./assets/png/z.png"/>
     <title>Portfolio | Felipe</title>
     <link rel="stylesheet" href="./styles/styles.css">
 
@@ -15,21 +15,19 @@
 <body onload="typeWriter (maqName)">
     <!-- Navigation -->
     <header>
-        <nav class="navbar">
-            <div class="responsive">
-                <div class="navbar_container">
-                    <div><a href="/" class="navbar_logo">&lsaquo;Portfolio/&rsaquo;</a></div>
-                    <ul class="navbar_menu">
+        <div class="responsive">
+            <div class="navbar_container">
+                <div><a href="/" class="navbar_container_logo">&lsaquo;Portfolio/&rsaquo;</a></div>
+                <div class="menu_btn active"><i class="fas fa-bars"></i></div>
+                    <ul class="navbar_menu active">
                         <li><a href="#index.html" class="navbar_menu-links">Início</a></li>
                         <li><a href="#about" class="navbar_menu-links">Sobre mim</a></li>
                         <li><a href="#projects" class="navbar_menu-links">Projetos</a></li>
                         <li><a href="#skills" class="navbar_menu-links">Habilidades</a></li>
                         <li><a href="#contact" class="navbar_menu-links">Contato</a></li>
                     </ul>
-               </div>
-               <div class="navbar_bars"><i class="fas fa-bars"></i></div>
             </div>
-        </nav>
+        </div>
     </header>
     <!-- Main -->
     <main>
@@ -43,7 +41,7 @@
                                 <span style="display: inline" class="_meu-nome">Felipe Silva.</span>
                                 <br />
                                 <!-- Desenvolvedor -->
-                                Desenvolvedor Fullstack
+                                Fullstack Developer
                             </p>
                             <div class="organize_btn">
                                 <a href="https://www.linkedin.com/in/felipe-silva-067633246/" target="_blank">
@@ -274,6 +272,7 @@
     <script src="./js/maquina_digitando.js"></script>
     <script src="./js/scroll.js"></script>
     <script src="./js/scroll-BTN.js"></script>
+    <script src="./js/menu.js"></script>
     <script type="text/javascript" src="/js/vanilla-tilt.js"></script>
     <script>VanillaTilt.init(document.querySelectorAll(".about_container-center_icon"))</script>
     <script>VanillaTilt.init(document.querySelectorAll(".skills_container-items-box"))</script>

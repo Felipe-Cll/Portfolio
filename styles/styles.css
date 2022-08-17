@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Ubuntu:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Ubuntu:wght@400;500;700&display=swap");
-.navbar_menu-links, .navbar_menu, .navbar_logo {
+.navbar_container .navbar_menu-links, .navbar_container .navbar_menu, .navbar_container_logo {
   display: flex;
   align-items: center;
 }
@@ -28,60 +28,70 @@
 
 header {
   background-color: #242424;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 999;
 }
 
-.navbar {
-  padding: 30px 0;
-}
 .navbar_container {
+  padding: 30px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.navbar_logo {
+.navbar_container_logo {
   color: #FFD700;
   cursor: pointer;
   font-size: 2rem;
   margin-left: 24px;
 }
-.navbar_bars {
-  opacity: 0;
-}
-@media screen and (max-width: 950px) {
-  .navbar_bars {
-    color: #FFF;
-    opacity: 1;
-    position: absolute;
-    top: 22px;
-    right: 20px;
-    font-size: 2rem;
-  }
-}
-.navbar_menu {
+.navbar_container .navbar_menu {
   list-style: none;
   text-align: center;
+  gap: 1rem;
 }
-@media screen and (max-width: 950px) {
-  .navbar_menu {
-    display: none;
-  }
-}
-.navbar_menu ul {
+.navbar_container .navbar_menu ul {
   display: flex;
 }
-.navbar_menu ul li {
+.navbar_container .navbar_menu ul li {
   list-style: none;
 }
-.navbar_menu-links {
+.navbar_container .navbar_menu-links {
   color: #FFF;
+  display: block;
   font-size: 1.3rem;
   justify-content: center;
-  margin-left: 20px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
-.navbar_menu-links:hover {
+.navbar_container .navbar_menu-links:hover {
   color: #FFD700;
+}
+.navbar_container .menu_btn {
+  opacity: 0;
+}
+@media screen and (max-width: 950px) {
+  .navbar_container .menu_btn {
+    color: #FFF;
+    opacity: 1;
+    z-index: 999;
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 950px) {
+  .navbar_container .navbar_menu {
+    position: fixed;
+    padding: 80px 10px;
+    top: 0;
+    right: -100%;
+    height: 40vh;
+    flex-direction: column;
+    background-color: #000;
+  }
+  .navbar_container .navbar_menu.active {
+    right: 0;
+  }
 }
 
 * {
@@ -103,7 +113,7 @@ header {
   justify-content: center;
   align-items: center;
   display: flex;
-  height: 90vh;
+  height: 100vh;
 }
 .hero_container {
   display: flex;
@@ -378,6 +388,7 @@ header {
   background-color: #FFD700;
   color: #242424;
   border-radius: 8px;
+  border: 2px solid #242424;
   height: 45px;
   width: 40px;
   text-align: center;

@@ -24,16 +24,17 @@
 
 header {
     background-color: $primary-color;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 999;
 }
 
-.navbar {
+.navbar_container {
     padding: 30px 0;
-
-    &_container {
-        display: flex;
-        align-items: center;
-        justify-content: space-between; 
-    }
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
     &_logo {
         color: $secondary-color;
@@ -42,30 +43,15 @@ header {
         margin-left: 24px;
         @extend %align-center;
     }
-
-    &_bars {
-        opacity: 0;
-
-        @include tablet {
-            color: $light;
-            opacity: 1;
-            position: absolute;
-            top: 22px;
-            right: 20px;
-            font-size: 2rem;
-        }
-    }
-
-    &_menu {
+        
+    .navbar_menu {
         @extend %align-center;
         list-style: none;
         text-align: center;
-
-        @include tablet {
-            display: none;
-        }
+        gap: 1rem;
 
         ul {
+
             display: flex;
 
             li {
@@ -75,19 +61,46 @@ header {
 
         &-links {
             color: $light;
+            display: block;
             font-size: 1.3rem;
             @extend %align-center;
             justify-content: center;
-            margin-left: 20px;
             cursor: pointer;
-            transition: all .3s ease-in-out;
+            transition: all .3s ease-in-out;    
 
             &:hover {
                 color: $secondary-color;
             }
         }
     }
-}
-
-
     
+    .menu_btn {
+        opacity: 0;
+
+        @include tablet {
+            color: $light;
+            opacity: 1;
+            z-index: 999;
+            font-size: 2rem; 
+        }
+    }
+
+    // Menu mobile
+    @include tablet {
+
+        .navbar_menu {
+            position: fixed;
+            padding: 80px 10px;
+            top: 0;
+            right: -100%;
+            height: 40vh;
+            flex-direction: column;
+            
+            background-color: $dark;
+            
+            &.active {
+                right: 0;
+            }
+        }
+    }
+}

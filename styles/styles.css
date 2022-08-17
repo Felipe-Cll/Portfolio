@@ -116,6 +116,8 @@ header {
   .hero_container {
     flex-direction: column;
     text-align: center;
+    gap: 0;
+    margin-bottom: 150px;
   }
 }
 .hero_container-left p {
@@ -384,6 +386,7 @@ header {
   right: 30px;
   bottom: 45px;
   font-size: 2rem;
+  opacity: 0;
 }
 
 .contact {

@@ -34,6 +34,8 @@ html {
         @include tablet {
             flex-direction: column;
             text-align: center;
+            gap: 0;
+            margin-bottom: 150px;
         }
 
         &-left p {
@@ -330,7 +332,9 @@ html {
         right: 30px;
         bottom: 45px;
         font-size: 2rem;
+        opacity: 0;
     }
+    
 }
 
 .contact {

@@ -436,8 +436,7 @@ html {
                     .fields, .field {
                         height: 40px;
                         width: 100%;
-                        margin-bottom: 5px
-
+                        margin-bottom: 5px;
                     }
 
                     .name {
@@ -450,12 +449,17 @@ html {
                 
                     .btn_area button {
                         margin-top: 10px;
-                        padding: 15px 30px;
+                        padding: 15px 50px;
                         background: $primary-color;
                         border-radius: 10px;
+                        border: 2px solid $primary-color;
                         color: #fff;
                         cursor: pointer;
                         transition: ease 0.3s all;
+
+                        &:hover {
+                            background-color: #353535;
+                        }
                     }
                 }
             }

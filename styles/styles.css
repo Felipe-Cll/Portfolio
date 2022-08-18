@@ -35,7 +35,7 @@ header {
 }
 
 .navbar_container {
-  padding: 30px 0;
+  padding: 10px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -77,20 +77,26 @@ header {
     opacity: 1;
     z-index: 999;
     font-size: 2rem;
+    margin-right: 10px;
   }
 }
 @media screen and (max-width: 950px) {
+  .navbar_container .menu_btn i.active:before {
+    content: "\f00d";
+  }
   .navbar_container .navbar_menu {
     position: fixed;
-    padding: 80px 10px;
+    padding: 20px 10px;
     top: 0;
     right: -100%;
-    height: 40vh;
+    height: 27vh;
     flex-direction: column;
-    background-color: #000;
+    background-color: #353535;
+    border-radius: 20px;
   }
   .navbar_container .navbar_menu.active {
-    right: 0;
+    right: 6px;
+    top: 58px;
   }
 }
 
@@ -494,12 +500,16 @@ header {
 }
 .contact_container-center-right-form .btn_area button {
   margin-top: 10px;
-  padding: 15px 30px;
+  padding: 15px 50px;
   background: #242424;
   border-radius: 10px;
+  border: 2px solid #242424;
   color: #fff;
   cursor: pointer;
   transition: ease 0.3s all;
+}
+.contact_container-center-right-form .btn_area button:hover {
+  background-color: #353535;
 }
 
 .footer {

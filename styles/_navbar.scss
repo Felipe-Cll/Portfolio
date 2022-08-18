@@ -102,7 +102,7 @@ header {
             height: 27vh;
             flex-direction: column;
             
-            background-color: #353535;
+            background-color: $primary-filter;
             border-radius: 20px;
             
             &.active {

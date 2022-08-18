@@ -87,7 +87,7 @@ html {
             }
 
             &-linkedin:hover, &-github:hover {
-                background-color: #ffd90091;
+                background-color: $secondary-filter;
             }
 
             &-linkedin p, &-github p {
@@ -198,7 +198,7 @@ html {
             align-items: center;
             justify-content: space-evenly;
             flex-wrap: wrap;
-            gap: 2rem;
+            gap: 3rem;
 
             &-box {
                 align-items: center;
@@ -217,7 +217,6 @@ html {
                     &:hover {
                         background-color: $primary-color;
                         box-shadow: 0 8px 50px rgba(0,0,0,0.2);
-                        margin-top: -30px;
                         transform: scale(1.05);
                     }
 
@@ -318,25 +317,7 @@ html {
                 }
             }
         }
-    }
-
-    #scroll-up {
-        text-decoration: none;
-        background-color: $secondary-color;
-        color: $primary-color;
-        border-radius: 8px;
-        border: 2px solid $primary-color;
-        height: 45px;
-        width: 40px;
-        text-align: center;
-        position: fixed;
-        right: 30px;
-        bottom: 45px;
-        font-size: 2rem;
-        display: none;
-        cursor: pointer;
-    }
-    
+    }    
 }
 
 .contact {
@@ -402,13 +383,13 @@ html {
                             }
                             
                             .fa-telegram:hover {
-                                color: #0088CC;
-                            }
-                            .fa-discord:hover {
-                                color: #7289da;
+                                color: $telegram-color;
                             }
                             .fa-linkedin:hover {
-                                color: #0A66C2;
+                                color: $linkedin-color;
+                            }
+                            .fa-discord:hover {
+                                color: $discord-color;
                             }
                         }
 
@@ -474,12 +455,12 @@ html {
                         background: $primary-color;
                         border-radius: 10px;
                         border: 2px solid $primary-color;
-                        color: #fff;
+                        color: $light;
                         cursor: pointer;
                         transition: ease 0.3s all;
 
                         &:hover {
-                            background-color: #353535;
+                            background-color: $primary-filter;
                         }
                     }
                 }
@@ -506,4 +487,21 @@ html {
             }
         }
     }
+}
+
+#scroll-up {
+    z-index: 999;
+    background-color: $secondary-color;
+    color: $primary-color;
+    border: 2px solid $primary-color;
+    border-radius: 8px;
+    height: 45px;
+    width: 40px;
+    text-align: center;
+    position: fixed;
+    right: 30px;
+    bottom: 45px;
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
 }

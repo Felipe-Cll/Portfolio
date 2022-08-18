@@ -483,6 +483,12 @@ header {
   resize: none;
   outline: none;
   font-size: 1rem;
+  transition: border-color, box-shadow 0.3s ease;
+}
+.contact_container-center-right-form input:hover, .contact_container-center-right-form input:focus, .contact_container-center-right-form textarea:hover, .contact_container-center-right-form textarea:focus {
+  outline: none;
+  border-color: #242424;
+  box-shadow: 0 0 0 1px #242424;
 }
 .contact_container-center-right-form .fields {
   display: flex;

@@ -18,6 +18,7 @@
         <div class="responsive">
             <div class="navbar_container">
                 <div><a href="/" class="navbar_container_logo">&lsaquo;Portfolio/&rsaquo;</a></div>
+                <div class="menu_btn"><i class="fas fa-bars"></i></div>    
                     <ul class="navbar_menu">
                         <li><a href="#index.html" class="navbar_menu-links">Início</a></li>
                         <li><a href="#about" class="navbar_menu-links">Sobre mim</a></li>
@@ -25,9 +26,6 @@
                         <li><a href="#skills" class="navbar_menu-links">Habilidades</a></li>
                         <li><a href="#contact" class="navbar_menu-links">Contato</a></li>
                     </ul>
-                <div class="menu_btn">
-                    <i class="fas fa-bars"></i>
-                </div>
             </div>
         </div>
     </header>
@@ -234,20 +232,20 @@
                     <div class="contact_container-center-right">
                         <div class="h3"><h3>Mensagem</h3></div>
                         <div class="contact_container-center-right-form">
-                            <form action="#contact">
+                            <form action="https://formsubmit.co/FelipeDev01@outlook.com" method="POST">
                                 <div class="fields">
                                     <div class="fields name">
-                                        <input type="text" placeholder="Name" required>
+                                        <input type="text" name="Nome" placeholder="Nome" required>
                                     </div>
                                     <div class="fields email">
-                                        <input type="email" placeholder="Email" required>
+                                        <input type="email" name="Email" placeholder="Email" required>
                                     </div>
                                 </div>
                                 <div class="field">
-                                    <input type="text" placeholder="Subject" required>
+                                    <input type="text"  name="Título" placeholder="Título" required>
                                 </div>
                                 <div class="field_textarea">
-                                    <textarea cols="30" rows="10" placeholder="Mensagem..." required></textarea>
+                                    <textarea name="Texto" cols="30" rows="10" placeholder="Mensagem..." required></textarea>
                                 </div>
                                 <div class="btn_area">
                                     <button type="submit">Enviar</button>

@@ -352,7 +352,7 @@ html {
         &-title {
             font-size: 2.5rem;
             text-align: center;
-            margin-bottom: 50px;
+            margin-bottom: 80px;
         }
 
         &-center {
@@ -374,7 +374,7 @@ html {
                     font-size: 1.5rem;
                 }
                 p {
-                    margin-bottom: 20px;
+                    margin-bottom: 30px;
                     font-size: 1.1rem;
                     word-wrap: break-word;
                 }
@@ -393,12 +393,26 @@ html {
                             transition: .3s ease-in-out;
                         }
 
-                        .fa-telegram:hover {
-                            color: #0088CC;
+                        &-redes {
+                            i {
+                                padding: 30px 20px 10px 0;
+                                font-size: 2rem;
+                                color: $primary-color;
+                                transition: .3s ease-in-out;
+                            }
+                            
+                            .fa-telegram:hover {
+                                color: #0088CC;
+                            }
+                            .fa-discord:hover {
+                                color: #7289da;
+                            }
+                            .fa-linkedin:hover {
+                                color: #0A66C2;
+                            }
                         }
-                        .fa-discord:hover {
-                            color: #7289da;
-                        }
+
+                        
                     }
                 }
             }
@@ -411,7 +425,7 @@ html {
                 }
 
                 h3 {
-                    margin-bottom: 20px;
+                    margin-bottom: 10px;
                     font-size: 1.5rem;
                 }
 
@@ -420,10 +434,10 @@ html {
                     input, textarea {
                         height: 100%;
                         width: 100%;
-                        border: 1px solid lightgrey;
                         border-radius: 10px;
                         padding: 0 15px;
                         resize: none;
+                        border: none;
                         outline: none;
                         font-size: 1rem;
                         transition: border-color, box-shadow 0.3s ease;
@@ -431,7 +445,7 @@ html {
                         &:hover, &:focus {
                             outline: none;
                             border-color: $primary-color;
-                            box-shadow: 0 0 0 1px $primary-color;
+                            box-shadow: 0 0 0 2px $primary-color;
                         }
                     }
 
@@ -455,6 +469,7 @@ html {
                 
                     .btn_area button {
                         margin-top: 10px;
+                        margin-bottom: 50px;
                         padding: 15px 50px;
                         background: $primary-color;
                         border-radius: 10px;

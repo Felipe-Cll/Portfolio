@@ -12,6 +12,8 @@
 
 html {
 
+    scroll-behavior: smooth;
+    
     @include tablet {
         font-size: 90%;
     }
